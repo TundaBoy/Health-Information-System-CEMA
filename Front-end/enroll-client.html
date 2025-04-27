@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <title>Enroll Client</title>
+</head>
+<body class="doctor">
+  <div class="container-register">
+    <header>Enroll Client in Program</header><br>
+
+    <form id="enroll-form">
+      <h5>Select Client:</h5>
+      <select id="client-select" required>
+        <option value="">-- Select Client --</option>
+      </select><br><br>
+
+      <h5>Select Program:</h5>
+      <select id="program-select" required>
+        <option value="">-- Select Program --</option>
+      </select><br><br>
+
+      <button type="submit">ENROLL</button>
+      <div id="enroll-message" class="message"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

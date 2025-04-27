@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>HIS Dashboard</title>
+</head>
+    <body class="index">
+    <header class="header">
+      <div class="logo-section">
+        <i class="fas fa-home"></i>
+        <span class="his-logo">HEALTH INFORMATION SYSTEM</span>
+      </div>
+  
+      <div class="search-section">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Clients Here..." />
+      </div>
+  
+      <div class="menu-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+      </div>
+  
+
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <li><a href="create-program.html" id="create-program">Create Health Program</a></li>
+          <li><a href="register-client.html" id="register-client">Register Client</a></li>
+          <li><a href="enroll-client.html" id="enroll-client">Enroll Client</a></li>
+          <li><a href="profile.html" id="view-profile">View Profile</a></li>
+          <li><a href="search-client.html" id="search-client">Search Client</a></li>
+          <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+  
+    <main class="main-content">
+      <div class="dashboard-grid">
+        <div class="dashboard-box" onclick="location.href='create-program.html'" id="create-program">
+          <i class="fas fa-notes-medical"></i>
+          <span>Create Health Program</span>
+        </div>
+        <div class="dashboard-box" onclick="location.href='register-client.html'" id="register-client">
+          <i class="fas fa-address-card"></i>
+          <span>Register Client</span>
+        </div>
+        <div class="dashboard-box" onclick="location.href='enroll-client.html'" id="enroll-client">
+          <i class="fas fa-viruses"></i>
+          <span>Enroll Client</span>
+        </div>
+        <div class="dashboard-box" onclick="location.href='profile.html'" id="view-profile">
+          <i class="fas fa-user"></i>
+          <span>View Profile</span>
+        </div>
+        <div class="dashboard-box" onclick="location.href='search-client.html'" id="search-client">
+          <i class="fas fa-magnifying-glass-plus"></i>
+          <span>Search Client</span>
+        </div>
+      </div>
+    </main>
+  
+    <script src="script.js"></script>
+</body>
+</html>
+  
